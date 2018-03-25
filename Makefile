@@ -1,6 +1,6 @@
 SHELL := $(shell which bash) -O globstar -c
 
-DOCUMENT := cv
+DOCUMENT := david_szakallas
 LATEX_ARGS=-halt-on-error -shell-escape
 
 FLAVOURS := pdflatex xelatex lualatex
