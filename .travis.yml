@@ -1,0 +1,14 @@
+sudo: true
+dist: trusty
+addons:
+  apt:
+    packages:
+    - lmodern
+    - texlive-full
+script:
+- make
+- |
+  if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then
+      BRANCH=$TRAVIS_BRANCH GH_REPO=$TRAVIS_REPO_SLUG \
+      GIT_USER=DeployBot GIT_EMAIL=david.szakallas@gmail.com make gh-upload
+  fi
