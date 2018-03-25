@@ -1,4 +1,4 @@
-\ProvidesClass{twentysecondcv}[2017/01/08 CV class]
+\ProvidesClass{cv}[2017/01/08 CV class]
 \LoadClass{article}
 \NeedsTeXFormat{LaTeX2e}
 
@@ -6,7 +6,7 @@
 %	 REQUIRED PACKAGES
 %----------------------------------------------------------------------------------------
 
-\RequirePackage[sfdefault]{ClearSans}
+%\RequirePackage[sfdefault]{ClearSans}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{tikz}
 \RequirePackage{xcolor}
