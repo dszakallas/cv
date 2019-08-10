@@ -19,7 +19,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[letterpaper]{cv} % a4paper for A4
+\documentclass[a4paper]{cv} % a4paper for A4
 
 %----------------------------------------------------------------------------------------
 %	 PERSONAL INFORMATION
@@ -46,8 +46,8 @@
 %	 ABOUT ME
 %----------------------------------------------------------------------------------------
 
-\aboutme{Software engineer with experience in distributed data processing and back-end service development with strong preference for functional programming.\newline\newline
-  I have a MSc degree in Computer Science Engineering and  5 years of experience in various areas ranging
+\aboutme{Software engineer with experience in distributed data processing and back-end service development with strong preference for functional programming and type safety.\newline\newline
+  I have a M.Sc.\ in Computer Science Engineering and 5 years of experience in various areas ranging
   from backend development to data engineering.} % To have no About Me section, just remove all the text and leave \aboutme{}
 
 %----------------------------------------------------------------------------------------
@@ -74,9 +74,7 @@
 
 \section{Interests}
 
-I love thinking creatively about problems and experimenting with new technologies, and I am passionate about delivering well-designed software. I consider myself a polyglot living by the phrase ``choose the best tool for the job''. I started to dive into \textbf{functional programming} early in my career. Now, I have a track record of working with Scala, JavaScript, Python and Java.
-
-I am experienced in distributed data processing and Big Data frameworks, most notably Apache Spark. I possess a considerable knowledge of query optimization and SQL. I am comfortable with the AWS technology stack. I have a basic foundation of statistics and machine learning (currently in the context of supervised learning) and related technologies e.g.\ R, Jupyter, numpy, pandas, scikit-learn.
+I focus on developing distributed \textbf{data ingestion} and \textbf{machine learning} pipelines on cloud platforms using common open source technologies. I am keen on delivering automated, well-engineered solutions to mission-critical processes. I am a polyglot, having worked with several languages and prefer to use Scala, Python and JavaScript. I also have a basic foundation of statistics, machine learning and related technologies \eg{} R, numpy, pandas, scikit-learn. I am a functional programming and type system enthusiast.
 
 %----------------------------------------------------------------------------------------
 %	 EDUCATION
@@ -85,8 +83,8 @@ I am experienced in distributed data processing and Big Data frameworks, most no
 \section{Education}
 
 \begin{twenty} % Environment for a list with descriptions
-	\twentyitem{2015 -- 2018}{M.Sc.\ CS Eng.}{Budapest University of Technology and Economics}{Thesis: Evaluation of openCypher graph queries with a local search-based algorithm}
-	\twentyitem{2011 -- 2015}{B.Sc.\ CS Eng.}{Budapest University of Technology and Economics}{}
+	\twentyitem{2015 -- 2018}{M.Sc.\ in CS Eng.}{Budapest University of Technology and Economics}{Thesis: Evaluation of openCypher graph queries with a local search-based algorithm}
+	\twentyitem{2011 -- 2015}{B.Sc.\ in CS Eng.}{Budapest University of Technology and Economics}{}
 \end{twenty}
 
 % %----------------------------------------------------------------------------------------
@@ -123,34 +121,21 @@ I am experienced in distributed data processing and Big Data frameworks, most no
 \section{Experience}
 
 \begin{twenty} % Environment for a list with descriptions
-	\twentyitem{Oct 2017 -- }{Data Engineer}{Ekata (formerly Whitepages Pro)
-    (Budapest)}{I have worked on ingestion and machine learning pipelines,
-    including developing a rapid ML feature prototyping application for data scientists,
-    orchestrating our ML pipeline and formerly developing the ingestion pipeline
-    for our Identity Graph in Scala and Apache Spark. During my day to day work,
-    I am using the following technologies and languages: AWS S3, AWS EC2, Kubernetes,
-    Docker, Apache Spark, Apache Airflow, Scala, Python, Kotlin, Databricks, XGBoost.}
+	\twentyitem{Oct 2017 -- now }{Data Engineer}{Ekata (formerly Whitepages Pro)
+    (Budapest)}{Developing a mission-critical data ingestion application in Apache Spark. Developing platform libraries for file I/O and caching for Apache Spark. Orchestrating an ML pipeline with Apache Airflow, Kubernetes, Helm and Databricks. Developing a rapid ML feature prototyping application for data scientists.}
 
-  \twentyitem{May 2017 -- Oct 2017}{M.Sc. Student}{Budapest University of
-    Technology and Economics}{I have developed a local-search based
-    pattern-matching engine for ingraph, an open-source incremental graph
-    query engine for openCypher developed in the Lendület Project. My
-    contribution --- written in Clojure --- forms the basis of my Master's Thesis.}
+  \twentyitem{May 2017 -- Oct 2017}{M.Sc.\ Student}{Budapest University of
+    Technology and Economics}{Developing a local-search based
+    pattern-matching engine in Clojure for ingraph, an open-source incremental graph query engine for openCypher.}
 
-	\twentyitem{Jan 2016 -- May 2017}{Software Developer}{RisingStack
-    (Budapest)}{My responsibilities includes developing,
-    supporting and releasing the monitoring agent written in Node.js.
-    Furthermore, I am part of the team developing the back end microservices of
-    the distributed tracing feature, gaining experience in industry-standard
-    distributed tracing technologies such as OpenZipkin, OpenTracing and Google
-    Dapper. Developing our microservice architecture gave me experience in Kubernetes and RabbitMQ.}
+	\twentyitem{Jan 2016 -- May 2017}{Software Engineer}{RisingStack
+    (Budapest)}{Developing the monitoring agent in Node.js.
+    Developing the back end microservices of the distributed tracing feature. Gaining experience in industry-standard distributed tracing technologies such as OpenZipkin, OpenTracing and Google Dapper.}
   
 	\twentyitem{Nov 2014 -- Aug 2015}{Technology Intern}{Morgan Stanley
-    (Budapest)}{I am part of the Interest Rates Derivatives team in Budapest. I
-    worked part-time developing an application for analysing logs of an internal
+    (Budapest)}{Developing an application for analysing logs of an internal
     messaging system for my Project Laboratory assignment using the ELK stack,
-    Scala and relational DBs. During the summer I am working in a team of three,
-    developing a financial application.}
+    Scala and relational DBs. Working on a financial application.}
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
 
@@ -162,14 +147,15 @@ I am experienced in distributed data processing and Big Data frameworks, most no
 
 \subsection{Public speaking}
 \begin{twentyshort} % Environment for a short list with no descriptions
-  \twentyitemshort{Oct 2018}{Spark\texttt{+}AI Summit EU - Spark Schema for Free}
-	\twentyitemshort{March 2018}{Budapest Clojure - Writing a Cypher query language in Clojure}
-	\twentyitemshort{July 2017}{NodeBP Meetup - Scripting a MIDI controller in JavaScript}
+  \twentyitemshort{Oct 2018}{Spark\texttt{+}AI Summit EU -- Spark Schema for Free}
+	\twentyitemshort{March 2018}{Budapest Clojure -- Writing a Cypher query language in Clojure}
+	\twentyitemshort{July 2017}{NodeBP Meetup -- Scripting a MIDI controller in JavaScript}
 \end{twentyshort}
 
 
 \subsection{Languages}
 \begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitemshort{Hungarian}{Native language}
 	\twentyitemshort{English}{Professional working proficiency}
 	\twentyitemshort{German}{Basic proficiency}
 \end{twentyshort}
