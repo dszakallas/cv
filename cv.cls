@@ -56,6 +56,7 @@
 %----------------------------------------------------------------------------------------
 %	 MISC CONFIGURATIONS
 %----------------------------------------------------------------------------------------
+\renewcommand{\familydefault}{\sfdefault}
 
 \renewcommand{\bfseries}{\color{gray}} % Make \textbf produce coloured text instead
 
